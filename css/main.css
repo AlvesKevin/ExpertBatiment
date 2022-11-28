@@ -4,6 +4,10 @@ html body{
   font-family: 'Poppins', sans-serif;
 }
 
+#numeroMobile{
+  display: none;
+}
+
 a{
   text-decoration: none;
 }
@@ -203,9 +207,13 @@ footer{
     flex-wrap: wrap;
   }
 
+  #numeroMobile{
+    display: none;
+  }
+
   #textePage1{
-    width: 380px;
-    height: 400px;
+    width: 340px;
+    height: 300px;
     font-size: 35px;
     font-weight: bolder;
     color: white;
@@ -255,8 +263,9 @@ footer{
   }
 
   #titreContact{
-    width: 385px;
+    width: 375px;
     margin: 0 auto;
+    padding-left: 15px;
   }
   #pageContact p{
     margin: 0 auto;
@@ -268,11 +277,15 @@ footer{
   #boutonContact{
     margin:40px auto;
   }
-
-
 }
 
+
 @media (max-width: 991px) {
+
+  #numeroMobile{
+    display: none;
+  }
+
   #telephoneHeader{
     display: none;
   }
@@ -298,7 +311,7 @@ footer{
   #logoHeader{
     width: 350px;
     height: 80px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   header{
@@ -357,6 +370,20 @@ footer{
     margin: 10px auto;
     text-decoration: none;
     color: black;
+  }
+}
+
+@media (max-width: 760px) {
+
+  #numeroMobile{
+    display: block;
+    width: 220px;
+    height: 50px;
+    margin: 20px auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
   }
 }
 
